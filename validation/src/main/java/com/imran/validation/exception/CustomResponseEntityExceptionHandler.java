@@ -43,6 +43,7 @@ public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptio
 	@ExceptionHandler(LaptopNotFoundException.class)
 	private final ResponseEntity<Object> handleUserNotFoundException(Exception exception, WebRequest request) throws Exception
 	{
+		
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), request.getDescription(false),
 				exception.getMessage());
 		

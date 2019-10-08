@@ -1,17 +1,15 @@
-package com.imran.validation.exception;
+package com.imran.prac.service.exception;
 
 import java.util.Date;
-
-import org.springframework.http.HttpStatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
 @Getter
+@AllArgsConstructor
 public class ExceptionResponse
 {
-	private Date timeStamp;
-	private String detail;
+	private Date timeStemp;
 	private String message;
+	private String description;
 }
