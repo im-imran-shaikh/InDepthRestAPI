@@ -8,5 +8,5 @@ import com.imran.prac.dto.Categories;
 @RepositoryRestResource(collectionResourceRel = "categories", path = "categories")
 public interface CategoriesRepository extends JpaRepository<Categories, Integer>
 {
-
+	Categories findByName(String name);
 }

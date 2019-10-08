@@ -1,12 +1,17 @@
 package com.imran.prac.dto;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -25,4 +30,7 @@ public class Categories
 	
 	@NotBlank
 	private String description;
+	
+	@OneToMany(mappedBy = "categories")
+	private List<Mobile> mobiles;
 }
