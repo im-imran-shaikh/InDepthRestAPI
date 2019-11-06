@@ -17,6 +17,9 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.6.1</version>
 		</dependency>
+		
+		To access, swagger Json formet documentation from browser use http://localhost:8888/v2/api-docs and
+		for UI use http://localhost:8888/swagger-ui.html
  
  	
 
