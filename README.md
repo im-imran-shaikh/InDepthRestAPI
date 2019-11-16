@@ -1,6 +1,6 @@
 # InDepthRestAPI
 
-NOTE : In latest Hateoas some modification has been done insted of Resource class use EntityModel.
+NOTE : In latest Hateoas some modification has been done instead of Resource class use EntityModel.
 
  
 	import org.springframework.hateoas.EntityModel;
