@@ -1,5 +1,13 @@
 # InDepthRestAPI
 
+In latest Hateoas some modification has been done insted of Resource class use EntityModel.
+use this 
+import org.springframework.hateoas.EntityModel;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+EntityModel<User> model = new EntityModel<>(user);
+WebMvcLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
+model.add(linkTo.withRel("all-users"));
+
 1) Swagger2 is used for documentation
  
  	Step 1 : To enable swagger in you application add the following depencency
