@@ -357,3 +357,9 @@ Some cool steps of git bash
 			 now push you changes to remote reposiotry
 	
 	command : git push origin +master
+	
+9) how to create new branch
+	command : git checkout -b <branch name>
+	
+10) how to switch branch
+	command : git checkout <branch name>
