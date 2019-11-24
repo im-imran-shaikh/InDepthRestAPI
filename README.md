@@ -318,3 +318,42 @@ NOTE : In latest Hateoas some modification has been done instead of Resource cla
 		return ResponseEntity.created(location).build();
 	}
 ---------------------------------------------------------------------------------------------------------------------------------
+
+Some cool steps of git bash
+
+1) how to download repository from remote(Github) to local.
+	Command : git clone <clone address> (for e.g  https://github.com/shaikh-imran1/Fruits.git)
+	
+2) how to check the status of you git reposiotry.
+	command : git status
+	
+3) how to check all commit history.
+	command : git log
+	
+4) how to add single file in local git.
+	command : git add <file name> (for e.g git add NewFile.txt )
+	NOTE : after adding you can add the commit message also and and push in remote repository
+	
+5) how to add all file at once.
+	command : git add --all
+	
+6) how to commit message in last added file. 
+	command : git commit -m "Your message here"
+	
+7) how to push you local reposiotry to remote reposiotr.y
+	command : git push origin +master
+	NOTE : here the above code is pushing in master branch
+	
+8) how to delete last commit.
+	NOTE : first delete from local reposiotry(from your machinng) then push your codein remote
+			reposiotry.
+
+	command : git reset --hard HEAD~1 
+
+	NOTE : the above cammand is for deleteting last commit if you you to delete multiple 
+			commit then use git reset --hard HEAD~(here you can specify how many commit
+			 you want to delete from top). also note that this will only delete from
+			 from you local repository not from remote reposiotry. To delete with remote reposiotry 
+			 now push you changes to remote reposiotry
+	
+	command : git push origin +master
