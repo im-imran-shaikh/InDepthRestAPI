@@ -363,3 +363,19 @@ Some cool steps of git bash
 	
 10) how to switch branch
 	command : git checkout <branch name>
+	
+	
+11) how to merge two branch
+	steps 1 : git checkout branchB  // switiching to brancb
+	step 2 git merge branchB // merging branch b with branch a
+	step 3: git push origin branchb //  pushing code to branch b
+	
+12) how to remove some file after merging
+	step 1: follwo step 1 and step 2 of 11 section // merging part
+	step 2: git rm filename // provide file name with extendion
+	step3: git commit -m "messgae"
+	step 4: git push origin barnchname
+	
+13) how to add again removed file in branch
+	step 1: git reset --hard barnchName // branchName = which branch faile you need to add
+	step 2: git push --force origin currentBranchName
